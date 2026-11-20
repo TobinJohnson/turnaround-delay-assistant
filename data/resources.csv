@@ -1,0 +1,9 @@
+resource,total,in_use,unserviceable,available,next_free_in_min,nearest_idle_stand
+belt_loader,8,6,0,2,0,S13
+passenger_steps,10,6,0,4,0,S2
+catering_truck,5,3,0,2,0,S8
+cleaning_crew,6,4,0,2,0,S13
+fuel_bowser,4,3,0,1,0,S16
+ramp_staff,30,29,0,1,0,S13
+gate_staff,12,9,0,3,0,S7
+load_controller,3,2,0,1,0,S3
