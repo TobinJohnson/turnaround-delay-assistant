@@ -83,11 +83,22 @@ python agent.py XA123 --rules     # force the rule-based playbook
 pytest -q                         # tests (no API key needed)
 ```
 
+## Use your own data: the sample airline
+
+In the dashboard sidebar, pick **Data → Sample airline**. It loads a small fictional airline (XK, Demo Regional Air) with 12 flights at one station (TRV), built from two files you can edit in Excel or any text editor:
+
+- `sample_data/schedule.csv`: one row per flight. Times are `HH:MM`. To simulate a ground problem, set `problem_task` (e.g. `Catering`, `Baggage offload`, `Fuelling`, `Boarding`) and `problem_extra_min`. Leave them empty for a clean turn.
+- `sample_data/resources.csv`: equipment and staff on shift (total, in use, unserviceable, available).
+
+Save the file and refresh the page. `build_sample.py` turns the schedule into the task-level data the app reads (`flights.csv`, `tasks.csv`). The snapshot time is 14:00, so flights around then show live delays.
+
 ## Project structure
 
 ```
 turnaround.py       domain knowledge: 45-min plan, task dependencies, IATA codes, playbook
 data_generator.py   synthetic day of 48 turnarounds + resources + 60-day delay history
+build_sample.py     builds the sample airline's data from sample_data/schedule.csv
+sample_data/        sample airline: editable schedule.csv and resources.csv
 detector.py         critical-path delay projection and RAG flagging
 tools.py            read-only agent tools + their JSON schemas
 agent.py            Claude agent loop + rule-based baseline

@@ -10,6 +10,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+import build_sample
 import data_generator
 from agent import ClaudeAgent, has_claude_credentials, rule_based_plan
 from data_generator import NOW, hhmm
@@ -27,16 +28,32 @@ if not (DATA_DIR / "flights.csv").exists():
     data_generator.write_all()
 
 
+SOURCES = {
+    "Simulated day (random)": "Station BLR · fictional airline XA",
+    "Sample airline (sample_data/)": "Station TRV · fictional airline XK, Demo Regional Air",
+}
+
+
 @st.cache_data
-def load_station(seed):
+def load_simulated(seed):
     data_generator.write_all(seed)
     return Station(NOW)
 
 
+def load_station(source, seed):
+    if source.startswith("Sample"):
+        # Rebuilt from sample_data/schedule.csv on every load, so your edits show up on refresh
+        build_sample.build_all()
+        return Station(NOW, build_sample.SAMPLE_DIR)
+    return load_simulated(seed)
+
+
 with st.sidebar:
     st.header("Control room")
-    st.caption(f"Station BLR · snapshot {hhmm(NOW)} · fictional airline XA")
-    seed = st.number_input("Scenario seed", value=7, step=1,
+    source = st.radio("Data", list(SOURCES),
+                      help="Sample airline: edit sample_data/schedule.csv and resources.csv, then refresh.")
+    st.caption(f"{SOURCES[source]} · snapshot {hhmm(NOW)}")
+    seed = st.number_input("Scenario seed", value=7, step=1, disabled=source.startswith("Sample"),
                            help="Change to generate a different (random) operating day.")
     creds = has_claude_credentials()
     use_ai = st.toggle("Use Claude agent", value=creds, disabled=not creds,
@@ -45,7 +62,7 @@ with st.sidebar:
         st.info("No API key found: running the rule-based playbook. "
                 "Set ANTHROPIC_API_KEY to enable the AI agent.")
 
-station = load_station(int(seed))
+station = load_station(source, int(seed))
 board = station.board.reset_index()
 live = flagged(board, NOW)
 

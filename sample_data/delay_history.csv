@@ -1,0 +1,179 @@
+day,delay_code,description,delay_min
+1,36,Fuelling / defuelling late,14
+1,33,Loading equipment (belt loader) lacking or broken,4
+1,36,Fuelling / defuelling late,12
+1,18,"Baggage processing, sorting or late bags",13
+1,37,Catering late delivery or loading,10
+1,93,Aircraft rotation: late arrival of inbound aircraft,22
+2,36,Fuelling / defuelling late,9
+2,31,Aircraft documentation late or inaccurate,4
+2,34,Servicing equipment (passenger steps / bridge) lacking or broken,5
+2,93,Aircraft rotation: late arrival of inbound aircraft,8
+2,93,Aircraft rotation: late arrival of inbound aircraft,13
+2,93,Aircraft rotation: late arrival of inbound aircraft,15
+2,93,Aircraft rotation: late arrival of inbound aircraft,23
+3,37,Catering late delivery or loading,9
+3,93,Aircraft rotation: late arrival of inbound aircraft,16
+3,93,Aircraft rotation: late arrival of inbound aircraft,21
+3,93,Aircraft rotation: late arrival of inbound aircraft,12
+3,18,"Baggage processing, sorting or late bags",5
+3,35,Aircraft cleaning late,8
+4,18,"Baggage processing, sorting or late bags",9
+4,93,Aircraft rotation: late arrival of inbound aircraft,13
+4,93,Aircraft rotation: late arrival of inbound aircraft,14
+4,93,Aircraft rotation: late arrival of inbound aircraft,17
+5,93,Aircraft rotation: late arrival of inbound aircraft,16
+5,93,Aircraft rotation: late arrival of inbound aircraft,22
+5,31,Aircraft documentation late or inaccurate,3
+5,33,Loading equipment (belt loader) lacking or broken,16
+5,15,"Boarding discrepancies, missing passengers",7
+5,93,Aircraft rotation: late arrival of inbound aircraft,20
+5,34,Servicing equipment (passenger steps / bridge) lacking or broken,9
+5,15,"Boarding discrepancies, missing passengers",7
+6,93,Aircraft rotation: late arrival of inbound aircraft,19
+6,33,Loading equipment (belt loader) lacking or broken,4
+6,93,Aircraft rotation: late arrival of inbound aircraft,16
+7,93,Aircraft rotation: late arrival of inbound aircraft,15
+7,37,Catering late delivery or loading,7
+7,93,Aircraft rotation: late arrival of inbound aircraft,12
+7,93,Aircraft rotation: late arrival of inbound aircraft,18
+7,34,Servicing equipment (passenger steps / bridge) lacking or broken,8
+7,35,Aircraft cleaning late,4
+7,93,Aircraft rotation: late arrival of inbound aircraft,6
+8,18,"Baggage processing, sorting or late bags",11
+8,93,Aircraft rotation: late arrival of inbound aircraft,20
+8,93,Aircraft rotation: late arrival of inbound aircraft,21
+8,37,Catering late delivery or loading,10
+8,93,Aircraft rotation: late arrival of inbound aircraft,10
+8,93,Aircraft rotation: late arrival of inbound aircraft,15
+8,33,Loading equipment (belt loader) lacking or broken,10
+8,37,Catering late delivery or loading,12
+9,93,Aircraft rotation: late arrival of inbound aircraft,22
+9,33,Loading equipment (belt loader) lacking or broken,8
+9,93,Aircraft rotation: late arrival of inbound aircraft,12
+9,37,Catering late delivery or loading,8
+9,37,Catering late delivery or loading,6
+9,18,"Baggage processing, sorting or late bags",6
+9,18,"Baggage processing, sorting or late bags",5
+10,33,Loading equipment (belt loader) lacking or broken,11
+10,34,Servicing equipment (passenger steps / bridge) lacking or broken,8
+10,93,Aircraft rotation: late arrival of inbound aircraft,14
+11,18,"Baggage processing, sorting or late bags",5
+11,18,"Baggage processing, sorting or late bags",15
+11,93,Aircraft rotation: late arrival of inbound aircraft,8
+11,18,"Baggage processing, sorting or late bags",5
+11,93,Aircraft rotation: late arrival of inbound aircraft,8
+11,93,Aircraft rotation: late arrival of inbound aircraft,25
+11,93,Aircraft rotation: late arrival of inbound aircraft,10
+12,33,Loading equipment (belt loader) lacking or broken,13
+12,33,Loading equipment (belt loader) lacking or broken,12
+12,18,"Baggage processing, sorting or late bags",10
+12,35,Aircraft cleaning late,8
+12,31,Aircraft documentation late or inaccurate,3
+12,18,"Baggage processing, sorting or late bags",3
+13,18,"Baggage processing, sorting or late bags",11
+13,33,Loading equipment (belt loader) lacking or broken,8
+13,93,Aircraft rotation: late arrival of inbound aircraft,24
+13,93,Aircraft rotation: late arrival of inbound aircraft,17
+14,15,"Boarding discrepancies, missing passengers",3
+14,93,Aircraft rotation: late arrival of inbound aircraft,38
+14,18,"Baggage processing, sorting or late bags",7
+15,15,"Boarding discrepancies, missing passengers",3
+15,93,Aircraft rotation: late arrival of inbound aircraft,21
+15,93,Aircraft rotation: late arrival of inbound aircraft,14
+15,18,"Baggage processing, sorting or late bags",13
+15,34,Servicing equipment (passenger steps / bridge) lacking or broken,10
+15,93,Aircraft rotation: late arrival of inbound aircraft,14
+15,37,Catering late delivery or loading,9
+15,33,Loading equipment (belt loader) lacking or broken,12
+16,37,Catering late delivery or loading,9
+16,31,Aircraft documentation late or inaccurate,7
+16,33,Loading equipment (belt loader) lacking or broken,6
+17,37,Catering late delivery or loading,5
+17,18,"Baggage processing, sorting or late bags",8
+17,18,"Baggage processing, sorting or late bags",5
+17,93,Aircraft rotation: late arrival of inbound aircraft,15
+17,93,Aircraft rotation: late arrival of inbound aircraft,19
+17,15,"Boarding discrepancies, missing passengers",5
+17,37,Catering late delivery or loading,3
+17,33,Loading equipment (belt loader) lacking or broken,11
+18,37,Catering late delivery or loading,9
+18,35,Aircraft cleaning late,8
+18,37,Catering late delivery or loading,3
+18,33,Loading equipment (belt loader) lacking or broken,14
+19,93,Aircraft rotation: late arrival of inbound aircraft,8
+19,15,"Boarding discrepancies, missing passengers",3
+19,93,Aircraft rotation: late arrival of inbound aircraft,17
+19,35,Aircraft cleaning late,8
+19,93,Aircraft rotation: late arrival of inbound aircraft,19
+19,35,Aircraft cleaning late,8
+19,93,Aircraft rotation: late arrival of inbound aircraft,32
+19,36,Fuelling / defuelling late,14
+20,33,Loading equipment (belt loader) lacking or broken,10
+20,33,Loading equipment (belt loader) lacking or broken,14
+20,37,Catering late delivery or loading,5
+21,33,Loading equipment (belt loader) lacking or broken,11
+21,93,Aircraft rotation: late arrival of inbound aircraft,28
+21,93,Aircraft rotation: late arrival of inbound aircraft,18
+21,15,"Boarding discrepancies, missing passengers",4
+21,15,"Boarding discrepancies, missing passengers",5
+21,93,Aircraft rotation: late arrival of inbound aircraft,20
+21,93,Aircraft rotation: late arrival of inbound aircraft,21
+22,93,Aircraft rotation: late arrival of inbound aircraft,17
+22,37,Catering late delivery or loading,9
+22,33,Loading equipment (belt loader) lacking or broken,6
+22,36,Fuelling / defuelling late,5
+22,34,Servicing equipment (passenger steps / bridge) lacking or broken,7
+23,93,Aircraft rotation: late arrival of inbound aircraft,12
+23,15,"Boarding discrepancies, missing passengers",6
+23,93,Aircraft rotation: late arrival of inbound aircraft,8
+23,93,Aircraft rotation: late arrival of inbound aircraft,17
+23,34,Servicing equipment (passenger steps / bridge) lacking or broken,4
+23,18,"Baggage processing, sorting or late bags",9
+24,35,Aircraft cleaning late,6
+24,93,Aircraft rotation: late arrival of inbound aircraft,25
+24,93,Aircraft rotation: late arrival of inbound aircraft,11
+24,33,Loading equipment (belt loader) lacking or broken,4
+24,33,Loading equipment (belt loader) lacking or broken,4
+24,18,"Baggage processing, sorting or late bags",12
+24,34,Servicing equipment (passenger steps / bridge) lacking or broken,4
+24,33,Loading equipment (belt loader) lacking or broken,9
+25,36,Fuelling / defuelling late,7
+25,15,"Boarding discrepancies, missing passengers",7
+25,93,Aircraft rotation: late arrival of inbound aircraft,14
+25,33,Loading equipment (belt loader) lacking or broken,14
+25,34,Servicing equipment (passenger steps / bridge) lacking or broken,9
+25,35,Aircraft cleaning late,6
+25,93,Aircraft rotation: late arrival of inbound aircraft,26
+25,18,"Baggage processing, sorting or late bags",10
+26,15,"Boarding discrepancies, missing passengers",6
+26,18,"Baggage processing, sorting or late bags",13
+26,93,Aircraft rotation: late arrival of inbound aircraft,18
+26,15,"Boarding discrepancies, missing passengers",7
+26,15,"Boarding discrepancies, missing passengers",7
+26,93,Aircraft rotation: late arrival of inbound aircraft,20
+27,18,"Baggage processing, sorting or late bags",11
+27,37,Catering late delivery or loading,3
+27,18,"Baggage processing, sorting or late bags",10
+27,37,Catering late delivery or loading,9
+27,18,"Baggage processing, sorting or late bags",4
+27,36,Fuelling / defuelling late,7
+27,18,"Baggage processing, sorting or late bags",7
+27,35,Aircraft cleaning late,6
+28,93,Aircraft rotation: late arrival of inbound aircraft,25
+28,36,Fuelling / defuelling late,14
+28,18,"Baggage processing, sorting or late bags",7
+28,93,Aircraft rotation: late arrival of inbound aircraft,8
+28,37,Catering late delivery or loading,8
+28,93,Aircraft rotation: late arrival of inbound aircraft,23
+28,33,Loading equipment (belt loader) lacking or broken,9
+29,93,Aircraft rotation: late arrival of inbound aircraft,19
+29,35,Aircraft cleaning late,7
+29,33,Loading equipment (belt loader) lacking or broken,17
+29,33,Loading equipment (belt loader) lacking or broken,7
+29,93,Aircraft rotation: late arrival of inbound aircraft,10
+29,35,Aircraft cleaning late,7
+29,35,Aircraft cleaning late,9
+30,93,Aircraft rotation: late arrival of inbound aircraft,12
+30,37,Catering late delivery or loading,10
+30,15,"Boarding discrepancies, missing passengers",5
