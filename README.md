@@ -1,5 +1,7 @@
 # ✈️ Turnaround Delay Assistant
 
+**Live demo:** [tobinjohnson.github.io/turnaround-delay-assistant](https://tobinjohnson.github.io/turnaround-delay-assistant/) (runs in your browser, ~15 s to load) · [Streamlit Cloud mirror](https://turnaround-delay-assistant.streamlit.app) (may need a wake-up click)
+
 **An AI agent that flags aircraft turnarounds about to miss their departure time and drafts recovery actions for a human duty manager to approve.**
 
 Built from delay patterns I saw first-hand in 7 years of airline ground operations (2015–2022). This project rebuilds those problems with today's AI tools.
