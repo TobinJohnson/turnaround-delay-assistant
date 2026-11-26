@@ -234,9 +234,9 @@ with tab_case:
     flag_rate = c1.slider("% turns flagged", 5, 40, 15) / 100
     accept_rate = c2.slider("% plans approved & executed", 10, 100, 70) / 100
     minutes_saved = c2.slider("Minutes saved per executed plan", 1, 15, 6)
-    cost_per_min = c3.number_input("Cost per delay minute (€)", value=100, step=10,
-                                   help="Assumption: European studies put the average cost of a tactical delay "
-                                        "minute around €100. Replace with your airline's own figure.")
+    cost_per_min = c3.number_input("Cost per delay minute (\\$)", value=100, step=10,
+                                   help="Assumption: airline cost studies put the average cost of a delay minute at roughly "
+                                        "\\$100. Replace with your airline's own figure.")
     reactionary = c3.slider("Reactionary multiplier", 1.0, 2.0, 1.3, 0.1,
                             help="Each primary minute saved also avoids knock-on minutes on later sectors.")
 
@@ -244,14 +244,14 @@ with tab_case:
         return flights_day * 365 * flag_rate * accept_rate * minutes * reactionary * cost
 
     base = annual(minutes_saved, cost_per_min)
-    st.metric("Estimated annual value (base case)", f"€{base:,.0f}")
+    st.metric("Estimated annual value (base case)", f"${base:,.0f}")
     st.write(f"= {flights_day} flights × 365 × {flag_rate:.0%} flagged × {accept_rate:.0%} executed × "
-             f"{minutes_saved} min × {reactionary} reactionary × €{cost_per_min}/min")
+             f"{minutes_saved} min × {reactionary} reactionary × \\${cost_per_min}/min")
 
     sens = pd.DataFrame(
-        [[f"€{annual(m, c):,.0f}" for c in (cost_per_min * 0.6, cost_per_min, cost_per_min * 1.4)] for m in (3, minutes_saved, 10)],
+        [[f"${annual(m, c):,.0f}" for c in (cost_per_min * 0.6, cost_per_min, cost_per_min * 1.4)] for m in (3, minutes_saved, 10)],
         index=["3 min saved (low)", f"{minutes_saved} min saved (base)", "10 min saved (high)"],
-        columns=[f"€{cost_per_min * 0.6:.0f}/min", f"€{cost_per_min}/min", f"€{cost_per_min * 1.4:.0f}/min"])
+        columns=[f"${cost_per_min * 0.6:.0f}/min", f"${cost_per_min}/min", f"${cost_per_min * 1.4:.0f}/min"])
     st.write("**Sensitivity**")
     st.dataframe(sens, width="stretch")
     st.caption("Costs not included: API usage (cents per plan), integration with AODB/GSE systems, training.")

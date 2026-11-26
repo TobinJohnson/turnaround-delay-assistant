@@ -111,9 +111,9 @@ docs/               interview guide, resume bullets
 
 ## Business case (default assumptions, all editable in the app)
 
-120 departures/day × 15% flagged × 70% of plans executed × 6 min saved × 1.3 reactionary multiplier × €100 per delay minute ≈ **€3.6M a year** for one station.
+120 departures/day × 15% flagged × 70% of plans executed × 6 min saved × 1.3 reactionary multiplier × $100 per delay minute ≈ **$3.6M a year** for one station.
 
-The €100/min figure is an assumption based on European airline cost studies. Replace it with your own airline's figure. The sensitivity table in the app runs from 3 to 10 minutes saved and from €60 to €140 per minute.
+The $100/min figure is a rounded assumption based on airline delay-cost studies. Replace it with your own airline's figure. The sensitivity table in the app runs from 3 to 10 minutes saved and from $60 to $140 per minute.
 
 ## Limitations and next steps
 
